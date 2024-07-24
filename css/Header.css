@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.info-text {
+    background-color: #f4f4f4; 
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; 
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.info-text ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+}
+
+.info-text ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px; 
+}
+
+.info-text ul li i {
+    font-size: 20px; 
+    color: #8AAAE5; 
+    margin-right: 10px; 
+}
+
+.info-text .info-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text .info-detail h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; 
+    margin: 0;
+}
+
+.info-text .info-detail p {
+    font-size: 14px;
+    color: #666; 
+    margin: 0;
+}
+
+.navigation-bar{
+    background: #24262b;
+}
+
+.navigation-bar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for Logo Section */
+.container .logo-section a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.logo-section .company-logo {
+    height: 40px;
+}
+
+.logo-section .company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+
+/* Styling for Search Bar Section */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 700px; 
+}
+
+.search-bar { 
+    font-size: 16px; 
+    width: 400px;
+    padding: 10px;
+    padding-right: 40px; 
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: none;
+    outline: none; 
+}
+
+.search-bar::placeholder {
+    color: #888; 
+    font-size: 16px; 
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.search-button i {
+    color: #333;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #8AAAE5; 
+}
+
+/* Styling for Right Nav Links Section */
+.nav-links ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 8px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+.nav-links ul li #login-section i{
+    margin-right: 10px;
+}
+.nav-links ul li #cart-section i{
+    font-size: 22px;
+}
+
+#login-section:hover, 
+#signup-section:hover, 
+#cart-section:hover {
+    background: rgba(50, 75, 122, 0.5); 
+    border-radius: 10px;
+}
