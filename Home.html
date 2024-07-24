@@ -7,211 +7,243 @@
     <link rel="stylesheet" href="css/Home.css" />
     <link rel="stylesheet" href="css/Header.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-    </head>
+    <link rel="stylesheet" href="css/Style.css" />
+</head>
 <body>
 
-<!-- Header and Navigation Bar Section-->
+<!-- Header and Navigation Bar Section -->
 <header class="info-text">
     <ul>
-    <li>
-        <h6>
-            <i class="fa-solid fa-phone"></i>
-        </h6>
-        <p>+977 0845029 | 0841929</p>
-    </li>
-    <li>
-        <span style="color: black">|</span>
-    </li>
-    <li>
-        <h6>
-            <i class="fa-solid fa-envelope"></i>
-        </h6>
-        <p>bookez@gmail.com</p>
-    </li>
-    <li>
-        <span style="color: black">|</span>
-    </li>
-    <li>
-        <h6>
-            <i class="fa-solid fa-location-dot"></i>
-        </h6>
-        <p>Kalanki, Kathmandu, Nepal</p>
-    </li>
+        <li>
+            <h6>
+                <i class="fa-solid fa-phone"></i>
+            </h6>
+            <p>+977 0845029 | 0841929</p>
+        </li>
+        <li>
+            <span style="color: black">|</span>
+        </li>
+        <li>
+            <h6>
+                <i class="fa-solid fa-envelope"></i>
+            </h6>
+            <p>bookez@gmail.com</p>
+        </li>
+        <li>
+            <span style="color: black">|</span>
+        </li>
+        <li>
+            <h6>
+                <i class="fa-solid fa-location-dot"></i>
+            </h6>
+            <p>Kalanki, Kathmandu, Nepal</p>
+        </li>
     </ul>
 </header>
 
 <div class="navigation-bar">
     <div class="container">
-    <div class="logo-section">
-        <a href="../Home.html">
-        <img
-            src="../assets/logo.png"
-            alt="company-logo"
-            class="company-logo"
-        />
-        <span class="company-name">BookEz</span>
-        </a>
-    </div>
-    <div class="search-container">
-        <form>
-        <div class="search-wrapper">
-            <input type="text" placeholder="Search" class="search-bar" />
-            <button class="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+        <div class="logo-section">
+            <a href="../Home.html">
+                <img
+                    src="../assets/logo.png"
+                    alt="company-logo"
+                    class="company-logo"
+                />
+                <span class="company-name">BookEz</span>
+            </a>
         </div>
+        <div class="search-container">
+            <form>
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search" class="search-bar" />
+                    <button class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="nav-links">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" id="login-section">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span style="color: white">|</span>
+                    </li>
+                    <li>
+                        <a href="#" id="signup-section">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#" id="cart-section">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content Section -->
+<div class="main-content">
+    <!-- Poll Section (Left Side) -->
+    <div class="poll-section">
+        <h2>What's your favorite book genre?</h2>
+        <form id="pollForm">
+            <label>
+                <input type="radio" name="genre" value="Fiction" /> Fiction
+            </label>
+            <label>
+                <input type="radio" name="genre" value="Non-Fiction" /> Non-Fiction
+            </label>
+            <label>
+                <input type="radio" name="genre" value="Fantasy" /> Fantasy
+            </label>
+            <label>
+                <input type="radio" name="genre" value="Mystery" /> Mystery
+            </label>
+            <button type="submit">Vote</button>
         </form>
+        <div id="pollResults" class="hidden">
+            <h3>Poll Results:</h3>
+            <div id="resultFiction">Fiction: 0%</div>
+            <div id="resultNonFiction">Non-Fiction: 0%</div>
+            <div id="resultFantasy">Fantasy: 0%</div>
+            <div id="resultMystery">Mystery: 0%</div>
+        </div>
     </div>
-    <div class="nav-links">
-        <nav>
-        <ul>
-            <li>
-            <a href="#" id="login-section">
-                <i class="fa-regular fa-user"></i>
-                <span>Login</span>
-            </a>
-            </li>
-            <li>
-            <span style="color: white">|</span>
-            </li>
-            <li>
-            <a href="#" id="signup-section">Sign Up</a>
-            </li>
-            <li>
-            <a href="#" id="cart-section">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-            </li>
-        </ul>
-        </nav>
-    </div>
-    </div>
-</div>
 
-<!-- Slider Section -->
-<div class="slider-content">
-    <div class="container">
-        <div class="slider-box">
-            <div class="slider">
-
-                <!-- 1st Slider -->
-                <div class="slide">
-                    <div class="info-cell">
-                        <h1 class="book-title">1984</h1>
-                        <p><strong>Author:</strong> George Orwell</p>
-                        <p><strong>Genre:</strong> Dystopian, Political Fiction</p>
-                        <p><strong>Published:</strong> 1949</p>
-                        <p class="book-description"><strong>Description:</strong> A dystopian novel set in a totalitarian society under the rule of Big Brother. The story follows Winston Smith's struggle against the oppressive regime and his quest for truth and individuality.</p>
-                        <p><strong>Rating:</strong> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star-half-alt star-gold"></i> (4.2/5)
-                        </p>
-                        <p><strong>Price:</strong> $14.99</p>
-                        <p><strong>Language:</strong> English</p>
-                        <div class="button-group">
-                            <a href="add-to-cart-link-1984.html" class="btn add-to-cart">Add to Cart</a>
-                            <a href="view-details-link-1984.html" class="btn view-details">View Details</a>
+    <!-- Slider Section (Right Side) -->
+    <div class="slider-content">
+        <div class="container">
+            <div class="slider-box">
+                <div class="slider">
+                    <!-- 1st Slider -->
+                    <div class="slide">
+                        <div class="info-cell">
+                            <h1 class="book-title">1984</h1>
+                            <p><strong>Author:</strong> George Orwell</p>
+                            <p><strong>Genre:</strong> Dystopian, Political Fiction</p>
+                            <p><strong>Published:</strong> 1949</p>
+                            <p class="book-description"><strong>Description:</strong> A dystopian novel set in a totalitarian society under the rule of Big Brother. The story follows Winston Smith's struggle against the oppressive regime and his quest for truth and individuality.</p>
+                            <p><strong>Rating:</strong> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star-half-alt star-gold"></i> (4.2/5)
+                            </p>
+                            <p><strong>Price:</strong> $14.99</p>
+                            <p><strong>Language:</strong> English</p>
+                            <div class="button-group">
+                                <a href="add-to-cart-link-1984.html" class="btn add-to-cart">Add to Cart</a>
+                                <a href="view-details-link-1984.html" class="btn view-details">View Details</a>
+                            </div>
                         </div>
-                     </div>
-                    <div class="image-cell">
-                        <img src="assets/1984 book.jpg" alt="1984 Book Image" />
-                    </div>
-                </div>
-
-                <!-- 2nd Slider -->
-                <div class="slide">
-                    <div class="info-cell">
-                        <h1 class="book-title">Big Little Lies</h1>
-                        <p><strong>Author:</strong> Liane Moriarty</p>
-                        <p><strong>Genre:</strong> Mystery, Drama</p>
-                        <p><strong>Published:</strong> 2014</p>
-                        <p class="book-description"><strong>Description:</strong> A gripping tale of three women whose seemingly perfect lives unravel to reveal a dark and tragic secret. Set in a wealthy Australian community, the novel explores themes of friendship, family, and domestic violence.</p>
-                        <p><strong>Rating:</strong> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star-half-alt star-gold"></i> (4.4/5)
-                        </p>
-                        <p><strong>Price:</strong> $16.99</p>
-                        <p><strong>Language:</strong> English</p>
-                        <div class="button-group">
-                            <a href="add-to-cart-link-big-little-lies.html" class="btn add-to-cart">Add to Cart</a>
-                            <a href="view-details-link-big-little-lies.html" class="btn view-details">View Details</a>
+                        <div class="image-cell">
+                            <img src="assets/1984 book.jpg" alt="1984 Book Image" />
                         </div>
                     </div>
-                    <div class="image-cell">
-                        <img src="assets/Big Little Lies.jpg" alt="Big Little Lies Book Image" />
-                    </div>
-                </div>
 
-                <!-- 3rd Slider -->
-                <div class="slide">
-                    <div class="info-cell">
-                        <h1 class="book-title">Gone Girl</h1>
-                        <p><strong>Author:</strong> Gillian Flynn</p>
-                        <p><strong>Genre:</strong> Thriller, Mystery</p>
-                        <p><strong>Published:</strong> 2012</p>
-                        <p class="book-description"><strong>Description:</strong> A psychological thriller about the disappearance of a woman named Amy Dunne and the ensuing investigation that puts her husband, Nick, under scrutiny. The novel explores themes of deception, marriage, and media influence.</p>
-                        <p><strong>Rating:</strong> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star-half-alt star-gold"></i> (4.1/5)
-                        </p>
-                        <p><strong>Price:</strong> $13.99</p>
-                        <p><strong>Language:</strong> English</p>
-                        <div class="button-group">
-                            <a href="add-to-cart-link-gone-girl.html" class="btn add-to-cart">Add to Cart</a>
-                            <a href="view-details-link-gone-girl.html" class="btn view-details">View Details</a>
+                    <!-- 2nd Slider -->
+                    <div class="slide">
+                        <div class="info-cell">
+                            <h1 class="book-title">Big Little Lies</h1>
+                            <p><strong>Author:</strong> Liane Moriarty</p>
+                            <p><strong>Genre:</strong> Mystery, Drama</p>
+                            <p><strong>Published:</strong> 2014</p>
+                            <p class="book-description"><strong>Description:</strong> A gripping tale of three women whose seemingly perfect lives unravel to reveal a dark and tragic secret. Set in a wealthy Australian community, the novel explores themes of friendship, family, and domestic violence.</p>
+                            <p><strong>Rating:</strong> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star-half-alt star-gold"></i> (4.4/5)
+                            </p>
+                            <p><strong>Price:</strong> $16.99</p>
+                            <p><strong>Language:</strong> English</p>
+                            <div class="button-group">
+                                <a href="add-to-cart-link-big-little-lies.html" class="btn add-to-cart">Add to Cart</a>
+                                <a href="view-details-link-big-little-lies.html" class="btn view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="image-cell">
+                            <img src="assets/Big Little Lies.jpg" alt="Big Little Lies Book Image" />
                         </div>
                     </div>
-                    <div class="image-cell">
-                        <img src="assets/Gone Girl.jpg" alt="Gone Girl Book Image" />
-                    </div>
-                </div>
 
-                <!-- 4th Slider -->
-                <div class="slide">
-                    <div class="info-cell">
-                        <h1 class="book-title">The Book Thief</h1>
-                        <p><strong>Author:</strong> Markus Zusak</p>
-                        <p><strong>Genre:</strong> Historical Fiction</p>
-                        <p><strong>Published:</strong> 2005</p>
-                        <p class="book-description"><strong>Description:</strong> Set in Nazi Germany, this novel follows Liesel Meminger, a young girl who steals books and shares them with others. Narrated by Death, it provides a poignant exploration of life during wartime and the power of literature.</p>
-                        <p><strong>Rating:</strong> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> 
-                            <i class="fa fa-star star-gold"></i> (4.7/5)
-                        </p>
-                        <p><strong>Price:</strong> $17.99</p>
-                        <p><strong>Language:</strong> English</p>
-                        <div class="button-group">
-                            <a href="add-to-cart-link-the-book-thief.html" class="btn add-to-cart">Add to Cart</a>
-                            <a href="view-details-link-the-book-thief.html" class="btn view-details">View Details</a>
+                    <!-- 3rd Slider -->
+                    <div class="slide">
+                        <div class="info-cell">
+                            <h1 class="book-title">Gone Girl</h1>
+                            <p><strong>Author:</strong> Gillian Flynn</p>
+                            <p><strong>Genre:</strong> Thriller, Mystery</p>
+                            <p><strong>Published:</strong> 2012</p>
+                            <p class="book-description"><strong>Description:</strong> A psychological thriller about the disappearance of a woman named Amy Dunne and the ensuing investigation that puts her husband, Nick, under scrutiny. The novel explores themes of deception, marriage, and media influence.</p>
+                            <p><strong>Rating:</strong> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star-half-alt star-gold"></i> (4.1/5)
+                            </p>
+                            <p><strong>Price:</strong> $13.99</p>
+                            <p><strong>Language:</strong> English</p>
+                            <div class="button-group">
+                                <a href="add-to-cart-link-gone-girl.html" class="btn add-to-cart">Add to Cart</a>
+                                <a href="view-details-link-gone-girl.html" class="btn view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="image-cell">
+                            <img src="assets/Gone Girl.jpg" alt="Gone Girl Book Image" />
                         </div>
                     </div>
-                    <div class="image-cell">
-                        <img src="assets/The book thief.jpg" alt="The Book Thief Book Image" />
-                    </div>
-                </div>
 
-            </div>
-            <div class="slider-nav">
-                <span class="nav-dot" onclick="currentSlide(1)"></span>
-                <span class="nav-dot" onclick="currentSlide(2)"></span>
-                <span class="nav-dot" onclick="currentSlide(3)"></span>
-                <span class="nav-dot" onclick="currentSlide(4)"></span>
+                    <!-- 4th Slider -->
+                    <div class="slide">
+                        <div class="info-cell">
+                            <h1 class="book-title">The Book Thief</h1>
+                            <p><strong>Author:</strong> Markus Zusak</p>
+                            <p><strong>Genre:</strong> Historical Fiction</p>
+                            <p><strong>Published:</strong> 2005</p>
+                            <p class="book-description"><strong>Description:</strong> Set in Nazi Germany, this novel follows Liesel Meminger, a young girl who steals books and shares them with others. Narrated by Death, it provides a poignant exploration of life during wartime and the power of literature.</p>
+                            <p><strong>Rating:</strong> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> 
+                                <i class="fa fa-star star-gold"></i> (4.7/5)
+                            </p>
+                            <p><strong>Price:</strong> $17.99</p>
+                            <p><strong>Language:</strong> English</p>
+                            <div class="button-group">
+                                <a href="add-to-cart-link-the-book-thief.html" class="btn add-to-cart">Add to Cart</a>
+                                <a href="view-details-link-the-book-thief.html" class="btn view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="image-cell">
+                            <img src="assets/The book thief.jpg" alt="The Book Thief Book Image" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider-nav">
+                    <span class="nav-dot" onclick="currentSlide(1)"></span>
+                    <span class="nav-dot" onclick="currentSlide(2)"></span>
+                    <span class="nav-dot" onclick="currentSlide(3)"></span>
+                    <span class="nav-dot" onclick="currentSlide(4)"></span>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 <script src="js/ImageSlider.js"></script>
+<script src="js/Poll.js"></script>
 </body>
 </html>
