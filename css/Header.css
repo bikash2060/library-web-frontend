@@ -18,6 +18,7 @@ body{
     padding: 10px 20px;
     border-bottom: 1px solid #ddd; 
     font-family: 'Montserrat', sans-serif; 
+    height: 40px;
 }
 
 .info-text ul {
@@ -61,6 +62,7 @@ body{
 
 .navigation-bar{
     background: #24262b;
+    height: 80px;
 }
 
 .navigation-bar .container{
