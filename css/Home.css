@@ -18,14 +18,17 @@ body{
     background-color: #F8F8FF;
     height: calc(100vh - 143px);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
     padding-top: 10px;
     margin-bottom: 20px;
 }
 
-.container {
+.slider-content .container {
     width: 100%;
     max-width: 1200px; 
+    display: flex;
+    gap: 20px;
 }
 
 .slider-box {
@@ -168,4 +171,124 @@ body{
 
 .view-details:hover {
     background-color: #218838; 
+}
+
+/* Styling Poll Section */
+.poll-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.poll-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.poll-question {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.poll-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poll-option {
+    background-color: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 350px;
+    transition: border-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.poll-option:hover {
+    border-color: #007BFF;
+}
+
+.poll-option input {
+    margin-right: 10px;
+    accent-color: #007BFF;
+}
+
+.poll-option label {
+    font-size: 1em;
+    color: #333;
+    flex-grow: 1;
+}
+
+.poll-submit-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.poll-submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Popup Modal */
+.popup-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.popup-modal-content p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
