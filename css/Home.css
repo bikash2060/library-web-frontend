@@ -298,3 +298,10 @@ body{
 }
 
 /* Books Section */
+.book-section .container {
+    display: flex;
+}
+
+
+
+/* Customer Testimonal Section */
