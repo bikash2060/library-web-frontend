@@ -1,3 +1,8 @@
+document.getElementById('pollForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    showPopup();
+});
+
 function showPopup() {
     var modal = document.getElementById("popupModal");
     modal.style.display = "block";
