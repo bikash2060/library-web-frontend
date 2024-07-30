@@ -355,7 +355,12 @@ body{
 }
 
 /* Styling Filter Section */
+.book-filter .container{
+    display: flex;
+}
+
 .filter-section {
+    flex: 1;
     background-color: #fff;
     max-width: 350px;
     padding: 20px;
@@ -419,6 +424,64 @@ body{
 .filter-group button:last-child:hover {
     background-color: #5a6268;
 }
+
+/* Styling Books Section */
+.book-seciton{
+    flex: 1;
+   margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Customer Testimonal Section */
 .section__container {
