@@ -211,42 +211,35 @@
             </div>
         </div>
         
-        <!-- Poll Section -->
-        <div class="poll-section">
-            <h2 class="poll-title">Your Opinion Matters!</h2>
-            <p class="poll-question">Which genre of books would you like to see more of in our library?</p>
-            <form class="poll-form" id="pollForm">
-                <label class="poll-option">
-                    <input type="radio" name="genre" value="fiction">
-                    Fiction
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="genre" value="non-fiction">
-                    Non-Fiction
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="genre" value="mystery">
-                    Mystery
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="genre" value="fantasy">
-                    Fantasy
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="genre" value="science-fiction">
-                    Science Fiction
-                </label>
-                <button type="submit" class="poll-submit-btn" onclick="showPopup()">Submit</button>
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <h2>Filter Books</h2>
+            <form>
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="">Select Category</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="non-fiction">Non-Fiction</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" placeholder="Enter author name">
+                </div>
+                <div class="filter-group">
+                    <label for="date">Publication Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="filter-group">
+                    <button type="submit">Apply Filters</button>
+                    <button type="reset">Reset Filters</button>
+                </div>
             </form>
         </div>
         
-        <!-- Popup Modal -->
-        <div id="popupModal" class="popup-modal">
-            <div class="popup-modal-content">
-                <span class="close-btn" onclick="closePopup()">&times;</span>
-                <p>Thank you for your vote!</p>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -269,51 +262,6 @@
         </div>
     </div>
 </div>
-
-<!-- Filter by Other Components and Books Section -->
- <div class="book-filter">
-    <div class="container">
-
-        <!-- Detailed Filter Section -->
-        <div class="filter-section">
-            <h2>Filter Books</h2>
-            <form>
-                <div class="filter-group">
-                    <label for="category">Category:</label>
-                    <select id="category" name="category">
-                        <option value="">Select Category</option>
-                        <option value="fiction">Fiction</option>
-                        <option value="non-fiction">Non-Fiction</option>
-                        <option value="science">Science</option>
-                        <option value="history">History</option>
-                    </select>
-                </div>
-        
-                <div class="filter-group">
-                    <label for="author">Author:</label>
-                    <input type="text" id="author" name="author" placeholder="Enter author name">
-                </div>
-        
-                <div class="filter-group">
-                    <label for="date">Publication Date:</label>
-                    <input type="date" id="date" name="date">
-                </div>
-        
-                <div class="filter-group">
-                    <button type="submit">Apply Filters</button>
-                    <button type="reset">Reset Filters</button>
-                </div>
-            </form>
-        </div>
-
-        <!-- Available Books Section -->
-        <div class="book-seciton">
-            <div class="container">
-                
-            </div>
-        </div>
-    </div>
- </div>
 
 
 <!-- Customer Testimonial Section -->
