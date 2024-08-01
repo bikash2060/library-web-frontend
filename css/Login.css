@@ -14,6 +14,7 @@ body{
 }
 
 /* Form Section */
+
 .login-box {
 	width: 380px;
     background-image: conic-gradient(from 450deg, #f7f8f9, #cad3dc);
