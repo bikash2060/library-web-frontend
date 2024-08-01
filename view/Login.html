@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
-    
+
 <!-- Header and Navigation Bar Section-->
 <header class="info-text">
     <ul>
@@ -85,6 +85,40 @@
     </div>
 </div>
 
-
+<!-- Login Form -->
+<div class="login-section">
+    <div class="container">
+        <div class="login-box">
+            <h2 class="heading">Login</h2>
+            <form action="#" id="form">
+                <div class="row">
+                    <div class="col">
+                        <label for="username"><b>Username:</b></label> 
+                        <input type="text" class="username" id="username" name="username">
+                        <span id="username-error"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="password"><b>Password:</b></label> 
+                        <input type="password" id="password" id="password" name="password">
+                        <span id="password-error"></span>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" class="checkbox" onclick="myFunction()">
+                    <label for="checkbox">Show Password</label>
+                </div>
+                <br>
+                <input type="submit" value="Login" class="login"> <br> <br>
+                <div class="createAccount">
+                    <p>Don't have account? <a href="Register.html">Create new account </a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/ShowPassword.js"></script>
+<script src="../js/FormValidation.js"></script>
 </body>
 </html>
