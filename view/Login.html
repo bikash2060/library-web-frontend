@@ -88,31 +88,28 @@
 <!-- Login Form -->
 <div class="login-section">
     <div class="container">
-        <div class="login-box">
-            <h2 class="heading">Login</h2>
-            <form action="#" id="form">
-                <div class="row">
-                    <div class="col">
-                        <label for="username"><b>Username:</b></label> 
-                        <input type="text" class="username" id="username" name="username">
-                        <span id="username-error"></span>
-                    </div>
+        <h2>Log In</h2>
+        <div class="form-container">
+            <form id="form">
+                
+                <div class="input-name">
+                    <i class="fa-solid fa-user user"></i>
+                    <input type="text" placeholder="Username" class="username" name="username" id="username">
+                    <span id="username-error"></span>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="password"><b>Password:</b></label> 
-                        <input type="password" id="password" name="password">
-                        <span id="password-error"></span>
-                    </div>
+
+                <div class="input-name">
+                    <i class="fa-solid fa-lock pass"></i>
+                    <input type="password" placeholder="Password" class="password" name="password" id="password">
+                    <span id="password-error"></span>
                 </div>
-                <div class="checkbox">
-                    <input type="checkbox" class="checkbox" onclick="myFunction()">
-                    <label for="checkbox">Show Password</label>
+                
+                <div class="input-name">
+                    <input type="submit" class="btn" value="Login">
                 </div>
-                <br>
-                <input type="submit" value="Login" class="login"> <br> <br>
-                <div class="createAccount">
-                    <p>Don't have account? <a href="Register.html">Create new account </a></p>
+
+                <div class="input-name">
+                    <p>Don't have account? <a href="../view/SignUp.html">Create new account </a></p>
                 </div>
             </form>
         </div>
