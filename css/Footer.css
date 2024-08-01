@@ -53,7 +53,6 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
 	color: #bbbbbb;
@@ -80,6 +79,13 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+
+.copyright{
+	padding: 0 15px;
+	margin-top: 25px;
+	color: #bbbbbb;
+}
+
 
 /*responsive*/
 @media(max-width: 767px){
