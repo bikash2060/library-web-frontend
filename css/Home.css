@@ -439,12 +439,61 @@ body{
     background-color: #218838;
 }
 
+/* Styling Pagination Section */
+.book-section .pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #383838;
+    padding: 10px 0;
+    border-radius: 6px;
+    text-align: center;
+}
 
+.pagination ul{
+    margin: 20px 30px;
+}
 
+.pagination ul li{
+    display: inline-block;
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 45px;
+    cursor: pointer;
+}
 
+.pagination .prev-btn, .next-btn{
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #383838;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
 
+.pagination .prev-btn i{
+    width: 24px;
+    margin-right: 15px;
+}
 
+.pagination .next-btn i{
+    width: 24px;
+    margin-left: 15px;
+}
 
+.pagination ul li.active{
+    color: #fff;
+    background-image: linear-gradient(#ff4568, #ff4568);
+    background-repeat: no-repeat;
+}
 
 
 
