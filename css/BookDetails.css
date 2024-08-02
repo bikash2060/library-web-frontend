@@ -132,6 +132,7 @@ body{
 
 .details-container .buttons a{
     text-decoration: none;
+    font-weight: 600;
 }
 
 .details-container .buttons .btn {
@@ -149,7 +150,26 @@ body{
 }
 
 
-.details-container .buttons button:hover {
+.details-container .buttons .btn:hover {
+    opacity: 0.9;
+}
+
+/* Styling Shop More Section */
+.shop-more .buy-more{
+    background-color: #007bff;
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.shop-more .buy-more:hover{
     opacity: 0.9;
 }
 
