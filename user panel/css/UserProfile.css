@@ -46,6 +46,7 @@ body{
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(225, 225, 225, 0.05);
     list-style: none;
+    transition: margin-left 0.3s ease;
 }
 
 .side-bar ul li a {
@@ -58,11 +59,20 @@ body{
     width: 25px;
 }
 
-.side-bar ul li:hover, .side-bar ul li.active {
+.side-bar ul li:hover {
+    background: #594f8d;
+    margin-left: 2px;
+}
+
+.side-bar ul li:hover a{
+    color: white;
+}
+
+.side-bar ul li.active{
     background: #594f8d;
 }
 
-.side-bar ul li a.active {
+.side-bar ul li.active a {
     color: #fff;
 }
 
