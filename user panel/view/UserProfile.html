@@ -115,9 +115,22 @@
             <!-- Right Side Content -->
             <div class="content">
 
+                <!-- User's Basic Information Section -->
                 <div id="basic-info" class="content-section active">
-                    <h3>Basic Information</h3>
-                    <p>Content related to Basic Information will be displayed here.</p>
+                    <div class="form">
+                        <form action="userUpdate" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div id="user">
+                                    <img src="../assets/customer1.png" alt="user-pic" class="user-pic">
+                                    <input type="file" name="image" id="image">
+                                    <label for="image" id="upload-btn"><i class="fa-solid fa-camera"></i></label>
+                                </div>
+                                <div id="username">
+                                    <h2>bikash bhattarai</h2>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div id="password" class="content-section">
@@ -129,7 +142,6 @@
                     <h3>Order History</h3>
                     <p>Content related to Order History will be displayed here.</p>
                 </div>
-            </div>
         </div>
     </div>
 </div>
