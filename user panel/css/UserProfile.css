@@ -14,49 +14,73 @@ body{
 }
 
 /* Styling User Profile Section */
-.title{
-    color: #afaeae; 
+.title {
+    color: #afaeae;
     font-size: 20px;
     font-weight: bold;
     padding-top: 10px;
     margin-bottom: 20px;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     position: relative;
 }
 
-.wrapper .side-bar{
+.wrapper .side-bar {
     width: 300px;
     height: 60vh;
-    position: relative;
-    padding: 0 0;
     background-color: #4b4276;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
 }
 
-.side-bar ul li{
+.side-bar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.side-bar ul li {
     padding: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(225, 225, 225, 0.05);
     list-style: none;
 }
 
-.side-bar ul li a{
+.side-bar ul li a {
     color: #bdb8d7;
     display: block;
     text-decoration: none;
 }
 
-.side-bar ul li a i{
+.side-bar ul li a i {
     width: 25px;
 }
 
-.side-bar ul li:hover{
+.side-bar ul li:hover, .side-bar ul li.active {
     background: #594f8d;
 }
 
-.side-bar ul li:hover a{
+.side-bar ul li a.active {
     color: #fff;
 }
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+
 

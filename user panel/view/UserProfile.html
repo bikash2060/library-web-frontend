@@ -94,26 +94,47 @@
         <div class="wrapper">
             <div class="side-bar">
                 <ul>
-                    <li>
-                        <a href="#">
+                    <li class="active">
+                        <a href="#" data-target="basic-info">
                             <i class="fa-solid fa-user"></i>Basic Information
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" data-target="password">
                             <i class="fa-solid fa-key"></i>Password
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" data-target="order-history">
                             <i class="fa fa-list"></i>Order History
                         </a>
                     </li>
                 </ul>
             </div>
+
+            <!-- Right Side Content -->
+            <div class="content">
+
+                <div id="basic-info" class="content-section active">
+                    <h3>Basic Information</h3>
+                    <p>Content related to Basic Information will be displayed here.</p>
+                </div>
+
+                <div id="password" class="content-section">
+                    <h3>Password</h3>
+                    <p>Content related to Password will be displayed here.</p>
+                </div>
+                
+                <div id="order-history" class="content-section">
+                    <h3>Order History</h3>
+                    <p>Content related to Order History will be displayed here.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
- 
+
+
+<script src="../js/UserProfile.js"></script>
 </body>
 </html>
