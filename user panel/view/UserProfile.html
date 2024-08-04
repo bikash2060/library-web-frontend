@@ -5,8 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="../css/UserProfile.css">
+    <link rel="stylesheet" href="../css/Header.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
-    
+
+<!-- Header and Navigation Bar Section-->
+    <header class="info-text">
+        <ul>
+            <li>
+                <h6>
+                    <i class="fa-solid fa-phone"></i>
+                </h6>
+                <p>+977 9762556405 | 9827117374</p>
+            </li>
+            <li>
+                <span style="color: black;">|</span>
+            </li>
+            <li>
+                <h6>
+                    <i class="fa-solid fa-envelope"></i>
+                </h6>
+                <p>bookez@gmail.com</p>
+            </li>
+            <li>
+                <span style="color: black;">|</span>
+            </li>
+            <li>
+                <h6>
+                    <i class="fa-solid fa-location-dot"></i>
+                </h6>
+                <p>Kalanki, Kathmandu, Nepal</p>
+            </li>
+        </ul>
+    </header>
+
+    <div class="navigation-bar">
+        <div class="container">
+            <div class="logo-section">
+                <a href="../Home.html">
+                    <img src="../assets/logo.png" alt="company-logo" class="company-logo">
+                    <span class="company-name">BookEz</span>
+                </a>
+            </div>
+            <div class="search-container">
+                <form>
+                    <div class="search-wrapper">
+                        <label>
+                            <input type="text" placeholder="Search" class="search-bar">
+                        </label>
+                        <button class="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="nav-links">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../view/Login.html" id="login-section">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Login</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span style="color: white;">|</span>
+                        </li>
+                        <li>
+                            <a href="../view/SignUp.html" id="signup-section">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="../view/Cart.html" id="cart-section">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+<!-- User Profile Section -->
+<div class="user-profile">
+    <div class="container">
+        <h2 class="title">My Profile</h2>
+
+        <div class="wrapper">
+            <div class="side-bar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>Basic Information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-key"></i>Password
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-list"></i>Order History
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+ 
 </body>
 </html>
