@@ -1,402 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>My Profile</title>
-    <link rel="stylesheet" href="../css/UserProfile.css">
-    <link rel="stylesheet" href="../css/Header.css"/>
-    <link rel="stylesheet" href="../css/Footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/UserProfile.css" />
 </head>
 <body>
 
-<!-- Header and Navigation Bar Section-->
-    <header class="info-text">
-        <ul>
-            <li>
-                <h6>
-                    <i class="fa-solid fa-phone"></i>
-                </h6>
-                <p>+977 9762556405 | 9827117374</p>
-            </li>
-            <li>
-                <span style="color: black;">|</span>
-            </li>
-            <li>
-                <h6>
-                    <i class="fa-solid fa-envelope"></i>
-                </h6>
-                <p>bookez@gmail.com</p>
-            </li>
-            <li>
-                <span style="color: black;">|</span>
-            </li>
-            <li>
-                <h6>
-                    <i class="fa-solid fa-location-dot"></i>
-                </h6>
-                <p>Kalanki, Kathmandu, Nepal</p>
-            </li>
-        </ul>
-    </header>
-
-    <div class="navigation-bar">
-        <div class="container">
-            <div class="logo-section">
-                <a href="../Home.html">
-                    <img src="../assets/logo.png" alt="company-logo" class="company-logo">
-                    <span class="company-name">BookEz</span>
-                </a>
-            </div>
-            <div class="search-container">
-                <form>
-                    <div class="search-wrapper">
-                        <label>
-                            <input type="text" placeholder="Search" class="search-bar">
-                        </label>
-                        <button class="search-button">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="nav-links">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../view/Login.html" id="login-section">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Login</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span style="color: white;">|</span>
-                        </li>
-                        <li>
-                            <a href="../view/SignUp.html" id="signup-section">Sign Up</a>
-                        </li>
-                        <li>
-                            <a href="../view/Cart.html" id="cart-section">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <!-- Top Navbar -->
+    <nav class="navbar">
+        <div class="logo_item">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <img src="../assets/user.png" alt="">Bikash Bhattarai
         </div>
-    </div>
 
-<!-- User Profile Section -->
-<div class="user-profile">
-    <div class="container">
-        <div class="wrapper">
-            <div class="side-bar">
-                <ul>
-                    <li class="active">
-                        <a href="#" data-target="basic-info">
-                            <i class="fa-solid fa-user"></i>Basic Information
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-target="password">
-                            <i class="fa-solid fa-key"></i>Password
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-target="order-history">
-                            <i class="fa fa-list"></i>Order History
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="navbar_content">
+            <img src="../assets/user.png" alt="" class="profile" />
+        </div>
+    </nav>
 
-            <!-- Right Side Content -->
-            <div class="content">
+    <!-- sidebar -->
+    <nav class="sidebar">
+        <div class="menu_content">
+            <ul class="menu_items">
 
-                <!-- User's Basic Information Section -->
-                <div id="basic-info" class="content-section active">
-                    <div class="form">
-                        <form>
-                            <div class="row">
-                                <div id="user">
-                                    <img src="../assets/customer1.png" alt="user-pic" class="user-pic">
-                                    <input type="file" name="image" id="image">
-                                    <label for="image" id="upload-btn"><i class="fa-solid fa-camera"></i></label>
-                                </div>
-                                <div id="username">
-                                    <h2>bikash bhattarai</h2>
-                                </div>
-                            </div>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                      <span class="navlink_icon">
+                        <i class="bx bx-user"></i>
+                      </span>
+                      <span class="navlink">Basic Information</span>
+                    </a>
+                </li>
 
-                            <div class="input-name">
-                                <i class="fa-solid fa-user lock"></i>
-                                <input type="text" placeholder="First Name" class="fname" name="firstName">
-                            </div>
-
-                            <div class="input-name">
-                                <i class="fa-solid fa-user lock"></i>
-                                <input type="text" placeholder="Last Name" class="fname" name="lastName">
-                            </div>
-            
-                            <div class="input-name">
-                                <i class="fa-solid fa-envelope envelope"></i>
-                                <input type="text" placeholder="Email" class="email" name="emailAddress">
-                                
-                            </div>
-            
-                            <div class="input-name">
-                                <i class="fa-solid fa-phone phoneNumber"></i>
-                                <input type="text" placeholder="Phone Number" class="number" name="phoneNumber">
-                            </div>
-            
-                            <div class="input-name">
-                                <i class="fa-solid fa-user phoneNumber"></i>
-                                <input type="text" placeholder="Username" class="username" name="username">
-                            </div>
-            
-                            <div class="input-name">
-                                <input type="submit" class="btn" value="Save">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- User's Password Section -->
-                <div id="password" class="content-section">
-                    <div class="form">
-                        <form>            
-                                        
-                            <div class="input-name">
-                                <i class="fa-solid fa-lock pass"></i>
-                                <input type="password" placeholder="Old Password" class="password" name="oldPassword">
-                            </div>
-
-                            <div class="input-name">
-                                <i class="fa-solid fa-lock pass"></i>
-                                <input type="password" placeholder="New Password" class="password" name="newPassword">
-                            </div>
-
-                            <div class="input-name">
-                                <i class="fa-solid fa-lock pass"></i>
-                                <input type="password" placeholder="Confirm Password" class="password" name="confirmPassword">
-                            </div>
-
-                            <div class="input-name">
-                                <input type="submit" class="btn" value="Save">
-                            </div>
-                        </form>
-                    </div>
-                    
-                </div>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                      <span class="navlink_icon">
+                        <i class="bx bx-lock"></i>
+                      </span>
+                      <span class="navlink">Password</span>
+                    </a>
+                </li>
                 
-                <!-- User's Order History Section -->
-                <div id="order-history" class="content-section">
-                    <div class="form">
-                        <div class="table-container">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Order ID</th>
-                                        <th>Order Date</th>
-                                        <th>Discount Amount</th>
-                                        <th>Total Amount</th>
-                                        <th>Payment Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>2024-08-04</td>
-                                        <td>$10.00</td>
-                                        <td>$100.00</td>
-                                        <td>Paid</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                
+                <li class="item">
+                    <a href="#" class="nav_link">
+                      <span class="navlink_icon">
+                        <i class="bx bx-list-ul"></i>
+                      </span>
+                      <span class="navlink">Order History</span>
+                    </a>
+                </li>
 
-            </div>
+                <li class="item" id="logout">
+                    <a href="#" class="nav_link">
+                      <span class="navlink_icon">
+                        <i class="bx bx-log-out"></i>
+                      </span>
+                      <span class="navlink">Log Out</span>
+                    </a>
+                </li>
+
+            </ul>
         </div>
-    </div>
-</div>
-
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <h4>company</h4>
-                <ul>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our services</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>get help</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Library Policy</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Log In</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>online shop</h4>
-                <ul>
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li><a href="#">Featured Books</a></li>
-                    <li><a href="#">Genres</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="social-links">
-                    <a href="https://github.com/bikash2060" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/bhattarai_bsal2" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/its_bshal20/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/bikashbhattarai/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2020-2024 BookEz. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="../js/UserProfile.js"></script>
+    </nav>
 </body>
 </html>
