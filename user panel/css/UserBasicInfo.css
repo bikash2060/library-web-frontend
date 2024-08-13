@@ -36,7 +36,7 @@ body.dark {
     margin-top: 70px;
     padding: 20px;
     background-color: #e7f2fd;
-    max-width: 1200px;
+    width: calc(100% - 260px);
 }
 
 .body-content .container{
@@ -46,6 +46,42 @@ body.dark {
     margin: 50px auto 50px;
     border-top: 5px solid blue;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+form .row{
+    display: flex;
+    align-items: center;
+}
+
+#user .user-pic{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#user #image{
+    display: none;
+}
+
+#user #upload-btn i{
+    position: absolute;
+    text-align: center;
+    padding: 6px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 80px;
+    transform: translateX(-90%);
+    background: rgb(173, 172, 172, 0.801);
+    box-shadow: 2px 4px 4px rgb(0,0,0,0.644);
+}
+
+.row #username h2{
+    font-size: 25px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: rgb(112, 112, 112);
 }
 
 .input-name {
