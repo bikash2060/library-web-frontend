@@ -4,67 +4,111 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <title>My Basic Information</title>
     <link rel="stylesheet" href="../css/UserProfile.css" />
     <link rel="stylesheet" href="../css/UserBasicInfo.css">
 </head>
 <body>
 
-    <!-- Top Navbar -->
-    <nav class="navbar">
-        <div class="logo_item">
-            <i class="bx bx-menu" id="sidebarOpen"></i>
-            <img src="../assets/user.png" alt="">Bikash Bhattarai
+<!-- Top Navbar -->
+<nav class="navbar">
+    <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="../assets/user.png" alt="">Bikash Bhattarai
+    </div>
+
+    <div class="navbar_content">
+        <img src="../assets/user.png" alt="" class="profile" />
+    </div>
+</nav>
+
+<!-- sidebar -->
+<nav class="sidebar">
+    <div class="menu_content">
+        <ul class="menu_items">
+
+            <li class="item">
+                <a href="#" class="nav_link">
+                    <span class="navlink_icon">
+                    <i class="bx bx-user"></i>
+                    </span>
+                    <span class="navlink">Basic Information</span>
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="#" class="nav_link">
+                    <span class="navlink_icon">
+                    <i class="bx bx-lock"></i>
+                    </span>
+                    <span class="navlink">Password</span>
+                </a>
+            </li>
+            
+            <li class="item">
+                <a href="#" class="nav_link">
+                    <span class="navlink_icon">
+                    <i class="bx bx-list-ul"></i>
+                    </span>
+                    <span class="navlink">Order History</span>
+                </a>
+            </li>
+
+            <li class="item" id="logout">
+                <a href="#" class="nav_link">
+                    <span class="navlink_icon">
+                    <i class="bx bx-log-out"></i>
+                    </span>
+                    <span class="navlink">Log Out</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Body Section -->
+<div class="body-content">
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <div class="input-name">
+                    <i class="fa-solid fa-user lock"></i>
+                    <input type="text" placeholder="First Name" class="fname" name="firstName">
+                    <span>
+                        <i class="fa-solid fa-user lock"></i>
+                        <input type="text" placeholder="Last Name" class="lname" name="lastName">
+                    </span>
+                </div>
+    
+                <div class="input-name">
+                    <i class="fa-solid fa-envelope envelope"></i>
+                    <input type="text" placeholder="Email" class="email" name="emailAddress">
+                    
+                </div>
+    
+                <div class="input-name">
+                    <i class="fa-solid fa-phone phoneNumber"></i>
+                    <input type="text" placeholder="Phone Number" class="number" name="phoneNumber">
+                </div>
+    
+                <div class="input-name">
+                    <i class="fa-solid fa-user phoneNumber"></i>
+                    <input type="text" placeholder="Username" class="username" name="username">
+                </div>
+    
+                <div class="input-name">
+                    <input type="submit" class="btn" value="Save">
+                </div>
+            </form>
         </div>
+    </div>
+</div>
 
-        <div class="navbar_content">
-            <img src="../assets/user.png" alt="" class="profile" />
-        </div>
-    </nav>
 
-    <!-- sidebar -->
-    <nav class="sidebar">
-        <div class="menu_content">
-            <ul class="menu_items">
 
-                <li class="item">
-                    <a href="#" class="nav_link">
-                      <span class="navlink_icon">
-                        <i class="bx bx-user"></i>
-                      </span>
-                      <span class="navlink">Basic Information</span>
-                    </a>
-                </li>
 
-                <li class="item">
-                    <a href="#" class="nav_link">
-                      <span class="navlink_icon">
-                        <i class="bx bx-lock"></i>
-                      </span>
-                      <span class="navlink">Password</span>
-                    </a>
-                </li>
-                
-                <li class="item">
-                    <a href="#" class="nav_link">
-                      <span class="navlink_icon">
-                        <i class="bx bx-list-ul"></i>
-                      </span>
-                      <span class="navlink">Order History</span>
-                    </a>
-                </li>
 
-                <li class="item" id="logout">
-                    <a href="#" class="nav_link">
-                      <span class="navlink_icon">
-                        <i class="bx bx-log-out"></i>
-                      </span>
-                      <span class="navlink">Log Out</span>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
 </body>
 </html>
